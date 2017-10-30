@@ -5,7 +5,7 @@ namespace Lab7
     class Program
     {
         static string[] names = { "Beni", "David R", "David S", "Evan", "Jacob", "Jordan", "Jason", "Liam", "Michael", "Pierce", "Steve" };
-        static string[] foods = { "Popcorn", "Pizza", "Cheeseburger", "Tacos", "Steak", "Lasagna", "Ribs", "Burritos", "Cookies", "Hot Dogs", "Cake" };
+        static string[] foods = { "popcorn", "pizza", "cheeseburgers", "tacos", "steak", "lasagna", "ribs", "burritos", "cookies", "hot dogs", "cake" };
         static string[] hometowns = { "Detroit", "Toledo", "Grand Rapids", "Warren", "Chicago", "Macomb", "Ann Arbor", "Pittsburgh", "Grosse Pointe", "Plymouth", "St. Clair" };
 
         static void Main(string[] args)
@@ -65,7 +65,7 @@ namespace Lab7
 
         private static bool DoAgain(string prompt)
         {
-            Console.WriteLine(prompt);
+            Console.Write(prompt);
             string response = Console.ReadLine().ToLower();
             if (response == "y" || response == "yes")
             {
